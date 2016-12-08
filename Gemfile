@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'httparty'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
@@ -47,10 +47,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'hirb'
-
-gem 'sandbox'
-
+gem 'hirb', '~> 0.7.3'
 gem 'bootstrap-sass', '3.2.0.2'
 
 gem 'rails-controller-testing'
