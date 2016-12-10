@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+
 gem 'httparty'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -51,3 +52,6 @@ gem 'hirb', '~> 0.7.3'
 gem 'bootstrap-sass', '3.2.0.2'
 
 gem 'rails-controller-testing'
+
+# Use Gravtastic for profile avatars
+gem 'gravtastic'
