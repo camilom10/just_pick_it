@@ -59,14 +59,7 @@ GEM
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
-    gravtastic (3.2.6)
->>>>>>> 7b891b2d85859e7c112916465e3999f0eb9d6c64
-    hirb (0.7.3)
->>>>>>> 12974ac2d57db4f7322ee6d84b5e0687abab6387
+
     httparty (0.14.0)
       multi_xml (>= 0.5.2)
     i18n (0.7.0)
