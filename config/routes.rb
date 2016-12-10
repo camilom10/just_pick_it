@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 =======
 
   resources :users
-  root 'users#index'
+  root 'users#new'
   get  '/signup',  to: 'users#new'
   post '/signup',  to: 'users#create'
   get    '/login',   to: 'sessions#new'
