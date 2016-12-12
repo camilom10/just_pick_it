@@ -4,21 +4,36 @@
 .poster {
   display: block;
   float: left;
-  padding: 50px 50px 30px 30px;
+  margin: 30px 50px 30px 30px;
+  box-shadow: 2px 10px 44px -4px rgba(0,0,0,0.75);
+  z-index: 2;
+  position: relative;
 
 }
 
 .title {
   padding-top: 50px;
+  margin-left: 400px;
 }
 
 .overwiew {
   padding-right: 150px;
+  margin-left: 400px;
 }
-#footerfooter {
-  background-color: blue;
-  text-align: center;
-  display: flex;
-  bottom: 0;
-  width: 100%;
+.text {
+background-color: #EFD4BA;
+opacity: 0.8;
+width: 100%;
+margin-top: 100px;
+display: block;
+box-shadow: 2px 10px 44px -4px rgba(0,0,0,0.75);
+z-index: 1;
+// position: absolute;
+margin-bottom: 30px;
+}
+
+.text p {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    line-height: 150%;
 }

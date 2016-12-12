@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>JustPickIt</title>
+    <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Calligraffitti|Cinzel|Dancing+Script|Euphoria+Script|Handlee|Homemade+Apple|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Mr+De+Haviland|News+Cycle|Nixie+One|Open+Sans+Condensed:300|Parisienne|Poiret+One|Quattrocento|Questrial|Quicksand|Qwigley|Raleway|Ruthie|Yellowtail" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -18,11 +19,14 @@
 
   <body>
 <div class="navi">
-<div id="about"> About </div> <div id="enter"> <div id="sign" href = "#"> Sign In </div> | <div id="log" href = "#"> Log In </div></div>
+<div id="about"> About </div>
+<!-- <div id="enter"> <div id="sign" href = "#"> Sign In </div> | <div id="log" href = "#"> Log In </div></div> -->
   </div>
-    <h1 id="main-title">Just Pick It</h1>
+    <div id="main-title"><h1>Just Pick It</h1></div>
+
 
     <%= yield %>
 
+<div id="footer"><div class="container"><p>created by: | </p></div></div>
   </body>
 </html>
