@@ -4,6 +4,8 @@ class TheMovieDbService
     if params[:genre]
       @genres = params[:genre].join(',')
       @url = "https://api.themoviedb.org/3/discover/movie?with_genres=#{@genres}&include_video=false&include_adult=false&sort_by=popularity.desc&language=en-US&api_key=4722ab521bc96d24058c095db629b2cd"
+      # if params[:now_playing]
+      # @urlnow = "https://api.themoviedb.org/3/movie/now_playing?region=US&language=en-US&api_key=4722ab521bc96d24058c095db629b2cd"
     else
       @genre = random_genre
       @url = "https://api.themoviedb.org/3/genre/#{@genre}/movies?api_key=4722ab521bc96d24058c095db629b2cd&language=en-US&include_adult=false&sort_by=created_at.asc"
@@ -18,10 +20,10 @@ class TheMovieDbService
     @response['results']
   end
 
-  def now_playing
-    # @urlnow = "https://api.themoviedb.org/3/movie/now_playing?region=US&language=en-US&api_key=4722ab521bc96d24058c095db629b2cd"
-
-  end
+  # def now_playing
+  # @response = HTTParty.get(@urlnow)
+  # @response['results']
+  # end
 
   def self.genres
     {
