@@ -6,12 +6,14 @@
   </head>
   <body>
 
-
+<div class="choose"><p></p></div>
 <div id="search-options">
-  <p>Select a Genre</p>
   <%=form_tag('/movies/search_result', method: :get) do%>
+  <div class="submit">
+  <%= submit_tag 'Go!', id: 'go'%>
+</div>
     <%= select_tag :genre,  options_for_select(@genres.map{ |key, value| [key, value]}), multiple: true %><br>
-    <%= submit_tag 'Search'%>
+
   <% end %>
 </div>
 </body>

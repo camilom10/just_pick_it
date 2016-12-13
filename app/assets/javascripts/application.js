@@ -15,3 +15,21 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+$(function(){
+  var options = $('option');
+  options.each(function(index, option) {
+    $(option).addClass('option-' + index);
+  });
+
+  // $( "#genre" ).change(function() {
+  //   $( "option" ).each(function() {
+  //     if ($(this).is(":selected")) {
+  //       $(this).css("backgroundColor", "yellow");
+  //     }
+  //   });
+  // })
+  //
+  // $('option').on('click', function() {
+  //   $('form').submit();
+  // });
+});

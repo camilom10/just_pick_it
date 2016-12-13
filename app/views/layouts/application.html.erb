@@ -19,14 +19,16 @@
 
   <body>
 <div class="navi">
-<div id="about"> About </div>
+  <div class="dropdown">
+  <div class="dropbtn"> About </div>
+  <div class="dropdown-content"><a><center>This application can generate a random movie for you when you are not sure on what to watch. You can pick the genre you will like to watch and when you click search it will find you a movie in that genre you choose. It is as simple as that. </centre></a></div>
 <!-- <div id="enter"> <div id="sign" href = "#"> Sign In </div> | <div id="log" href = "#"> Log In </div></div> -->
-  </div>
-    <div id="main-title"><h1>Just Pick It</h1></div>
+  </div></div>
+    <div id="main-title"><h1><a href="/movies/search">Just Pick It</a></h1></div>
 
 
     <%= yield %>
 
-<div id="footer"><div class="container"><p>created by: Anastasia Bykova | Camilo Mejia </p></div></div>
+<div id="footer"><div class="container"><p>CREATED BY: BYKOVA ANASTASIA | CAMILO MEJIA</p></div></div>
   </body>
 </html>
