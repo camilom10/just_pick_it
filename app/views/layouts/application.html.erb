@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>JustPickIt</title>
-        <%= csrf_meta_tags %>
+        <link
+            href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Calligraffitti|Cinzel|Dancing+Script|Euphoria+Script|Handlee|Homemade+Apple|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Mr+De+Haviland|News+Cycle|Nixie+One|Open+Sans+Condensed:300|Parisienne|Poiret+One|Quattrocento|Questrial|Quicksand|Qwigley|Raleway|Ruthie|Yellowtail"
+            rel="stylesheet">
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
         <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,29 +19,22 @@
     </head>
 
     <body>
-        <div class="navi">
-            <div id="about">
-                <%= link_to 'Home', root_path %>
-            </div>
-            <div id="enter">
-                <div id="sign" href="#">
-                    <%= link_to 'Sign In', signup_path %>
-                </div>
-                |
-                <div id="log" href="#">
-                    <%= link_to 'Log In', login_path %>
+
+        <body>
+            <div class="navi">
+                <div id="about">
+                    <a href="app/views/layouts/about.html.erb"About
                 </div>
             </div>
-        </div>
-        <h1 id="main-title">Just Pick It</h1>
-
-        <%= yield %>
-
-        <div id="footer">
-            <div class="container">
-                <p>
-                    Camilo & Anastasia</p>
+            <div id="main-title">
+                <h1>Just Pick It</h1>
             </div>
-        </div>
-    </body>
-</html>
+            <%= yield %>
+            <div id="footer">
+                <div class="container">
+                    <p>created by: |
+                    </p>
+                </div>
+            </div>
+        </body>
+    </html>
