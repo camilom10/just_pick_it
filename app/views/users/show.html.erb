@@ -1,25 +1,28 @@
 <p id="notice"><%= notice %></p>
 
-<div id="top-bar">
-  
-</div>
+<div id="top-bar"></div>
 
 <div class="row">
-  <aside class="col-md-4">
-    <section class="user_info">
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
-    </section>
-  </aside>
+    <aside class="col-md-4">
+        <section class="user_info">
+            <h1>
+                <%= gravatar_for @user %>
+                Welcome
+                <%= @user.name %>!
+            </h1>
+        </section>
+    </aside>
 </div>
 
-<p>
-  <strong>Email:</strong>
-  <%= @user.email %>
+<p class="email">
+    <strong>Email:</strong>
+    <%= @user.email %>
 </p>
 
-<%= link_to 'Home' %>
+<div>
+  <h4 class="seen">Movies Seen:</h4>
+</div>
+
+<%= link_to 'Home', root_path %>
 <!-- <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %> -->

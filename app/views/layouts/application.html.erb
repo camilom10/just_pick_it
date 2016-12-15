@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>JustPickIt</title>
-    <link href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Calligraffitti|Cinzel|Dancing+Script|Euphoria+Script|Handlee|Homemade+Apple|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Mr+De+Haviland|News+Cycle|Nixie+One|Open+Sans+Condensed:300|Parisienne|Poiret+One|Quattrocento|Questrial|Quicksand|Qwigley|Raleway|Ruthie|Yellowtail" rel="stylesheet">
-    <%= csrf_meta_tags %>
+    <head>
+        <title>JustPickIt</title>
+        <link
+            href="https://fonts.googleapis.com/css?family=Allura|Amatic+SC|Calligraffitti|Cinzel|Dancing+Script|Euphoria+Script|Handlee|Homemade+Apple|Josefin+Sans|Josefin+Slab|Julius+Sans+One|Mr+De+Haviland|News+Cycle|Nixie+One|Open+Sans+Condensed:300|Parisienne|Poiret+One|Quattrocento|Questrial|Quicksand|Qwigley|Raleway|Ruthie|Yellowtail"
+            rel="stylesheet">
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  </head>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
 
+<<<<<<< HEAD
+    <body>
+=======
   <body>
 <div class="navi">
   <div class="dropdown">
@@ -25,10 +29,32 @@
 <!-- <div id="enter"> <div id="sign" href = "#"> Sign In </div> | <div id="log" href = "#"> Log In </div></div> -->
   </div></div>
     <div id="main-title"><h1><a href="/movies/search">Just Pick It</a></h1></div>
+>>>>>>> b7d000d877bb6440407961732554be82ffab247f
 
+<<<<<<< HEAD
+        <body>
+            <div class="navi">
+                <div id="about">
+                    <a href="app/views/layouts/about.html.erb"About
+                </div>
+            </div>
+            <div id="main-title">
+                <h1>Just Pick It</h1>
+            </div>
+            <%= yield %>
+            <div id="footer">
+                <div class="container">
+                    <p>created by: |
+                    </p>
+                </div>
+            </div>
+        </body>
+    </html>
+=======
 
     <%= yield %>
 
 <div id="footer"><div class="container"><p>CREATED BY: BYKOVA ANASTASIA | CAMILO MEJIA</p></div></div>
   </body>
 </html>
+>>>>>>> 3285575c0ca152582a3f535f7dff0d2138fe94e8
