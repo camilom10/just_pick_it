@@ -12,7 +12,7 @@
 }
 
 .title {
-  padding-top: 50px;
+  padding-top: 10px;
   margin-left: 430px;
 }
 .text .title p {
@@ -39,4 +39,14 @@ margin-bottom: 30px;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     line-height: 150%;
+}
+#link {
+  padding-right: 50px;
+}
+#link a {
+  text-align: right;
+}
+#link a:hover {
+  text-decoration: none;
+  color: inherit;
 }

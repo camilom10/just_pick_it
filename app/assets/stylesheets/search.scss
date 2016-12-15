@@ -12,18 +12,35 @@ font-family: 'Open Sans Condensed', sans-serif;
 //   font-size: 2em;
 //   padding-left: 50px;
 // }
+// .choose {
+//   position: relative;
+//   height: 100%;
+//   width: 100%;
+//   z-index: 0;
+//   option{
+//     z-index: 1;
+//   }
+// }
 
+.choose:hover {
+  background-color: rgba(255,255,255,0.3);
+  height: 100%;
+  width: 100%;
+  option{
+    opacity: 1;
+  }
+}
 #genre {
   background: transparent;
   border: none;
   text-align: center;
   overflow: visible;
   font-size: 50px;
-
   color: #474747;
-  opacity: 0.5;
+  color: black;
+  opacity: 0.7;
   // text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px;
-// text-shadow: rgb(224, 224, 224) 1px 1px 0px;
+text-shadow: rgb(224, 224, 224) 1px 1px 0px;
 }
 
 #genre:focus {
@@ -33,8 +50,11 @@ font-family: 'Open Sans Condensed', sans-serif;
 }
 
 #genre option:hover {
-  color: black;
-// opacity: 0.5;
+  color: white;
+  // opacity: 0.7;
+    // border: 3px solid white;
+    text-shadow: rgba(255, 255, 255, 0.0980392) -1px -1px 1px, rgba(0, 0, 0, 0.498039) 1px 1px 1px;
+    font-size: 1.3em;
 }
 
 #genre option {
@@ -53,7 +73,7 @@ font-family: 'Open Sans Condensed', sans-serif;
 // }
 :focus {
     outline: inherit;
-    outline-color: transparent;;
+    outline-color: transparent;
     outline-style: auto;
     outline-width: 5px;
 }
@@ -69,6 +89,7 @@ left: 250px;
 .option-1 {
 position:absolute;
 top: 165px;
+right: 286px;
 }
 .option-2 {
 position:absolute;
@@ -78,7 +99,7 @@ top: 301px;
 .option-3 {
 position:absolute;
 top: 297px;
-    left: 277px;
+left: 255px;
 
 }
 .option-4 {
@@ -93,8 +114,9 @@ top: 375px;
 }
 .option-6 {
 position:absolute;
-top: 250px;
-right: 500px;
+top: 543px;
+    left: 395px;
+
 }
 .option-7 {
 position:absolute;
@@ -113,8 +135,8 @@ left: 350px;
 }
 .option-10 {
 position:absolute;
-top: 700px;
-    left: 360px;
+top: 428px;
+right: 351px;
 }
 .option-11 {
   position:absolute;
@@ -128,8 +150,8 @@ top: 700px;
 }
 .option-13 {
   position:absolute;
-  top: 677px;
-  right: 390px;
+  top: 618px;
+  right: 62px;
 }
 .option-14 {
   position:absolute;
@@ -139,8 +161,8 @@ top: 700px;
 }
 .option-15 {
   position:absolute;
-  top: 612px;
-  left: 390px;
+  top: 632px;
+    left: 334px;
 }
 .option-16 {
   position:absolute;
@@ -150,9 +172,8 @@ top: 700px;
 }
 .option-17 {
   position:absolute;
-  top: 641px;
-    left: 130px;
-
+  top: 598px;
+  left: 112px;
 }
 
 input {
