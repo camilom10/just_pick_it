@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-<div class="poster">
-    <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2<%= @movie['poster_path']%>"  >
-</div>
-<div class="text">
-<div id="link"><a href="/movies/search_result"><p>Don't like it? &nbsp;<i class="fa fa-repeat" aria-hidden="true"></i>&nbsp; try again!</p></a></div>
-<div class="title"><p><%= @movie['title'] %> </p></div></br>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <div class="poster">
+            <img src="https://image.tmdb.org/t/p/w300_and_h450_bestv2<%= @movie['poster_path']%>">
+        </div>
+        <div class="text">
+            <div id="link">
+                <a href="/movies/search_result">
+                    <p>Don't like it? &nbsp;<i class="fa fa-repeat" aria-hidden="true"></i>&nbsp; try again!</p>
+                </a>
+            </div>
+            <div class="title">
+                <p><%= @movie['title'] %>
+                </p>
+            </div>
+        </br>
 
-<div class="overwiew"><p><i>Overwiew: &nbsp; </i> <%= @movie['overview'] %></p></div></br>
+        <div class="overwiew">
+            <p>
+                <i>Overwiew: &nbsp;
+                </i>
+                <%= @movie['overview'] %></p>
+        </div>
+    </br>
 
 </div>
-<!-- <div class= "link"> <%= link_to 'Try Again', movies_search_result_path %> </div> -->
-  <!-- <div id="footerfooter"><div class="container"><p> names</p></div></div> -->
 </body>
 </html>
