@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-  <div class="choose">
-  <div id="search-options">
-    <%=form_tag('/movies/search_result', method: :get) do%>
-    <div class="submit">
-    <%= submit_tag 'Go!', id: 'go'%>
-  </div>
-      <%= select_tag :genre,  options_for_select(@genres.map{ |key, value| [key, value]}), multiple: true %><br>
+    <body>
+        <div class="choose">
+            <div id="search-options">
+                <%=form_tag('/movies/search_result', method: :get) do%>
+                <div class="submit">
+                    <%= submit_tag 'Go!', id: 'go'%>
+                </div>
+                <%= select_tag :genre,  options_for_select(@genres.map{ |key, value| [key, value]}), multiple: true %><br>
 
-    <% end %>
-  </div>
-</div>
-</body>
+                <% end %>
+            </div>
+        </div>
+    </body>
 </html>
