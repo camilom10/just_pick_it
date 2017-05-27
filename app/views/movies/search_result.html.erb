@@ -10,12 +10,12 @@
         </div>
         <div class="text">
             <div id="link">
-                <a href="/movies/search_result">
+                <a href="<%= @search_link %>">
                     <p>Don't like it? &nbsp;<i class="fa fa-repeat" aria-hidden="true"></i>&nbsp; try again!</p>
                 </a>
             </div>
             <div class="title">
-                <p><%= @movie['title'] %>
+                <p><%= @movie['title'] %> (<%= @movie['release_date'][0,4] %>)
                 </p>
             </div>
         </br>
@@ -28,6 +28,12 @@
         </div>
     </br>
 
+</div>
+<div id="footers">
+    <div class="container">
+        <p>created by: |
+        </p>
+    </div>
 </div>
 </body>
 </html>

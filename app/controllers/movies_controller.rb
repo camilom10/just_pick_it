@@ -8,5 +8,6 @@ class MoviesController < ApplicationController
 
   def search_result
     @movie = TheMovieDbService.new(params).search.sample
+    @search_link = request.url
   end
 end
